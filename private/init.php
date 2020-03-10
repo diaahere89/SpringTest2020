@@ -40,6 +40,7 @@ require_once('classes/Product.class.php');
 require_once('classes/Customer.class.php');
 require_once('classes/Wishlist.class.php');
 require_once('classes/WishProduct.class.php');
+require_once('classes/ParseCSV.class.php');
 
 // -> All classes in directory
 foreach (glob('classes/*.class.php') as $file) {
@@ -50,7 +51,7 @@ foreach (glob('classes/*.class.php') as $file) {
 // function my_autoload($class)
 // {
 //     if (preg_match('/\A\w+\Z/', $class)) {
-//         include('classes/' . $class . '.class.php');
+//         include('./classes/' . $class . '.class.php');
 //     }
 // }
 // spl_autoload_register('my_autoload');
